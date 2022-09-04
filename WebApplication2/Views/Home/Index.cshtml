@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+
+
+
+
+
+    <h3>Product List</h3>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+            
+        </tr>
+        @foreach (var product in ViewBag.products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.name</td>
+                <td>@product.email</td>
+                <td>@product.password</td>
+                <td><a href="">delete</a> <a href="">insert </a> <a href=""> update</a></td>
+                
+            </tr>
+        }
+    </table>
+
+
+
+Structure of ASP.NET MVC Project
+
